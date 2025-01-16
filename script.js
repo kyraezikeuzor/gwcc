@@ -11,7 +11,7 @@ let currentWord;
 let currentRow = 0;
 let currentTile = 0;
 let isGameOver = false;
-let isCustomWordMode = true;
+let isCustomWordMode = false;
 
 // ===========================================
 // Task 2: Custom Word Input
@@ -86,16 +86,24 @@ function createKeyboard() {
 // ===========================================
 
 function handleKeyInput(key) {
+    // First check if we're waiting for word setup
+    if (isCustomWordMode && key === 'ENTER') {
+        promptForCustomWord();
+        return;
+    }
+    
+    // Don't process other keys if we're still in custom word mode
     if (isCustomWordMode) {
-        if (key === 'Enter') {
-            promptForCustomWord();
-        }
         return;
     }
 
-    if (isGameOver) return;
+    // Don't process keys if game is over
+    if (isGameOver) {
+        return;
+    }
 
-    if (key === 'Enter') {
+    // Now handle the actual gameplay keys
+    if (key === 'ENTER') {
         checkGuess();
     } else if (key === '←' || key === 'BACKSPACE') {
         deleteLetter();
@@ -181,13 +189,13 @@ function checkGuess() {
 
 document.addEventListener('keydown', (e) => {
     const key = e.key.toUpperCase();
-    if (key === 'ENTER' || key === 'BACKSPACE' || /^[A-Z]$/.test(key)) {
-        handleKeyInput(key);
-    }
+    handleKeyInput(key);
 });
 
 // ===========================================
 // Task 8: Game Initialization
+currentWord = WORD_LIST[Math.floor(Math.random() * WORD_LIST.length)];  // Set initial random word
+
 // Description: Initialize the game when the page loads
 // ===========================================
 
