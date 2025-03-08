@@ -6,23 +6,23 @@ body {
     align-items: center;
     background-color: #121213;
     color: white;
-}
-
-/* Game Board Styles */
-.game-board {
+  }
+  
+  /* Game Board Styles */
+  .game-board {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     gap: 5px;
     margin: 20px;
-}
-
-.row {
+  }
+  
+  .row {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 5px;
-}
-
-.tile {
+  }
+  
+  .tile {
     width: 60px;
     height: 60px;
     border: 2px solid #3a3a3c;
@@ -32,38 +32,38 @@ body {
     font-size: 2rem;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-/* Tile State Styles */
-.correct {
+  }
+  
+  /* Tile State Styles */
+  .correct {
     background-color: #538d4e;
     border-color: #538d4e;
-}
-
-.present {
+  }
+  
+  .present {
     background-color: #b59f3b;
     border-color: #b59f3b;
-}
-
-.absent {
+  }
+  
+  .absent {
     background-color: #3a3a3c;
     border-color: #3a3a3c;
-}
-
-/* Keyboard Styles */
-.keyboard {
+  }
+  
+  /* Keyboard Styles */
+  .keyboard {
     display: grid;
     gap: 5px;
     margin-top: 20px;
-}
-
-.keyboard-row {
+  }
+  
+  .keyboard-row {
     display: flex;
     justify-content: center;
     gap: 5px;
-}
-
-.key {
+  }
+  
+  .key {
     background-color: #818384;
     color: white;
     border: none;
@@ -72,11 +72,12 @@ body {
     font-weight: bold;
     cursor: pointer;
     min-width: 30px;
-}
-
-/* Message Styles */
-.message {
+  }
+  
+  /* Message Styles */
+  .message {
     margin-top: 20px;
     font-size: 1.2rem;
     min-height: 30px;
-}
+  }
+  
