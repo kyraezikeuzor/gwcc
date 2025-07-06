@@ -1,0 +1,137 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap");
+
+@font-face {
+  font-family: "Instrument Sans";
+  src: url("https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap")
+    format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background-image: url("/grid-bg.png");
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgba(253, 226, 202, 0.7) 50%,
+    rgba(251, 192, 165, 0.8) 100%
+  );
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--foreground);
+  font-family: "Inter", sans-serif;
+  height: 100%;
+  min-height: 100vh;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 0 0 1em 0;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.example-card {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.example-card:hover {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #222;
+  margin: 0 0 0.5em 0;
+}
+
+.example-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0 0 1em 0;
+  line-height: 1.6;
+}
+
+a {
+  color: rgb(232, 113, 133);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: inherit;
+  text-decoration: underline-none;
+}
+
+hr {
+  color: rgb(232, 113, 133);
+  width: 100%;
+}
+
+/* Filter Button Styles */
+.filter-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.6rem 1rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  font-family: "Inter", sans-serif;
+}
+
+.filter-button-inactive {
+  background: rgba(255, 255, 255, 0.8);
+  color: #666;
+  border-color: rgb(232, 113, 133, 40%);
+}
+
+.filter-button-inactive:hover {
+  border-color: rgba(232, 113, 133, 0.5);
+  box-shadow: 0 2px 6px 0 rgba(232, 113, 133, 0.2);
+}
+
+.filter-button-active {
+  background: rgb(232, 113, 133);
+  color: white;
+  border-color: rgb(232, 113, 133);
+}
+
+.filter-button-active:hover {
+  box-shadow: 0 2px 6px 0 rgba(232, 113, 133, 0.2);
+  transform: translateY(-1px);
+}
