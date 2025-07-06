@@ -10,7 +10,7 @@ export default function ResourceLibrary() {
 
   const resourceTypes = [
     { id: "all", label: "All", emoji: "✨" },
-    { id: "workshop", label: "Workshops", emoji: "🎓" },
+    { id: "workshop", label: "Workshops", emoji: "📚" },
     { id: "event", label: "Events", emoji: "🎉" },
     { id: "tool", label: "Tools", emoji: "🛠️" },
     { id: "program", label: "Programs", emoji: "🌟" },
@@ -52,7 +52,9 @@ export default function ResourceLibrary() {
       <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-2">
         {filteredResources.map((resource) => (
           <div key={resource.name} className="example-card">
-            <h3>{resource.name}</h3>
+            <h3 className="flex items-center gap-2">
+              {resource.icon} {resource.name}
+            </h3>
             <p>{resource.description}</p>
             {resource.link ? (
               <Link

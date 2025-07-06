@@ -30,13 +30,6 @@
 }
 
 body {
-  background-image: url("/grid-bg.png");
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.8) 0%,
-    rgba(253, 226, 202, 0.7) 50%,
-    rgba(251, 192, 165, 0.8) 100%
-  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -55,7 +48,7 @@ p {
 
 h1 {
   font-size: 3.2rem;
-  font-weight: 500;
+  font-weight: 600;
   color: #222;
 }
 
@@ -88,16 +81,11 @@ h3 {
 }
 
 a {
-  color: rgb(232, 113, 133);
+  color: teal;
   text-decoration: none;
   font-weight: 500;
   font-size: inherit;
   text-decoration: underline-none;
-}
-
-hr {
-  color: rgb(232, 113, 133);
-  width: 100%;
 }
 
 /* Filter Button Styles */
@@ -115,23 +103,23 @@ hr {
 }
 
 .filter-button-inactive {
-  background: rgba(255, 255, 255, 0.8);
+  background: #f9f9f9;
   color: #666;
-  border-color: rgb(232, 113, 133, 40%);
+  border: 1px solid #e5e5e5;
 }
 
 .filter-button-inactive:hover {
-  border-color: rgba(232, 113, 133, 0.5);
-  box-shadow: 0 2px 6px 0 rgba(232, 113, 133, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
 }
 
 .filter-button-active {
-  background: rgb(232, 113, 133);
-  color: white;
-  border-color: rgb(232, 113, 133);
+  background: #f9f9f9;
+  color: #666;
+  border-color: teal;
 }
 
 .filter-button-active:hover {
-  box-shadow: 0 2px 6px 0 rgba(232, 113, 133, 0.2);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.08);
   transform: translateY(-1px);
 }

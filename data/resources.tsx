@@ -161,10 +161,6 @@ export function transformWorkshopsToResources(workshops: any[]): Resource[] {
     description: workshop.description,
     type: "workshop" as const,
     link: workshop.link,
-    icon: (
-      <div className="w-5 h-5 object-cover rounded-md bg-blue-100 p-1 flex items-center justify-center">
-        🎓
-      </div>
-    ),
+    icon: workshop.icon
   }));
 }

@@ -3,6 +3,13 @@ export const workshops = [
     title: "Wordle",
     description: "Build a Wordle clone with HTML, CSS, and JavaScript.",
     link: "/w/wordle",
+    icon: (
+      <img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Xs3Am9a3KmIBOEeVAM6zCD2w8d3qZ36XDw&s"
+        alt="Apple Logo"
+        className="w-5 h-5object-cover rounded-md"
+      />
+    ),
     starterCodeFiles: [
       {
         name: "index.html",
@@ -518,6 +525,11 @@ export const workshops = [
     title: "Personal Website",
     description: "Build a personal website with HTML, CSS, and JavaScript.",
     link: "/w/personal-website",
+    icon: (
+      <div className="flex items-center justify-center w-5 h-5bg-gray-200 rounded-md">
+        🌐
+      </div>
+    ),
     starterCodeFiles: [
       {
         name: "index.html",
