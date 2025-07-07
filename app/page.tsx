@@ -1,4 +1,4 @@
-import ResourceLibrary from "@/components/library";
+import ResourceLibrary from "@/components/ui/library";
 import Link from "next/link";
 
 export default function Home() {
