@@ -51,23 +51,19 @@ export default function ResourceLibrary() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 w-full gap-2">
         {filteredResources.map((resource) => (
-          <div key={resource.name} className="example-card">
+          <div key={resource.name} className="card">
             <h3 className="flex items-center gap-2">
               {resource.icon} {resource.name}
             </h3>
             <p>{resource.description}</p>
             {resource.link ? (
-              <Link
-                href={resource.link}
-                target="_blank"
-                className="example-link"
-              >
+              <Link href={resource.link} target="_blank">
                 View{" "}
                 {resource.type.charAt(0).toUpperCase() + resource.type.slice(1)}{" "}
                 →
               </Link>
             ) : (
-              <span className="example-link opacity-50 cursor-not-allowed">
+              <span className="opacity-50 cursor-not-allowed">
                 No link available
               </span>
             )}

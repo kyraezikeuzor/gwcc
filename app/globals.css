@@ -52,19 +52,6 @@ h1 {
   color: #222;
 }
 
-.example-card {
-  background: #f9f9f9;
-  border: 1px solid #e5e5e5;
-  border-radius: 12px;
-  padding: 1.2rem;
-  transition: box-shadow 0.2s, border-color 0.2s;
-}
-
-.example-card:hover {
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
-  border-color: #d0d0d0;
-}
-
 h3 {
   font-family: "Inter", sans-serif;
   font-size: 1.2rem;
@@ -73,8 +60,21 @@ h3 {
   margin: 0 0 0.5em 0;
 }
 
-.example-card p {
-  font-size: 0.95rem;
+.card {
+  background: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 1.2rem;
+  transition: box-shadow 0.2s, border-color 0.2s;
+}
+
+.card:hover {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+  border-color: #d0d0d0;
+}
+
+.card p {
+  font-size: 1rem;
   color: #555;
   margin: 0 0 1em 0;
   line-height: 1.6;
@@ -94,7 +94,7 @@ a {
   align-items: center;
   padding: 0.6rem 1rem;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   transition: all 0.2s ease;
   cursor: pointer;
@@ -127,7 +127,7 @@ a {
 /* Responsive Typography */
 @media (max-width: 768px) {
   p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   h1 {
@@ -138,8 +138,8 @@ a {
     font-size: 1.1rem;
   }
 
-  .example-card p {
-    font-size: 0.9rem;
+  .card p {
+    font-size: 1.2rem;
   }
 
   .filter-button {
@@ -150,7 +150,7 @@ a {
 
 @media (max-width: 480px) {
   p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   h1 {
@@ -161,12 +161,12 @@ a {
     font-size: 1rem;
   }
 
-  .example-card p {
-    font-size: 0.85rem;
+  .card p {
+    font-size: 1.1rem;
   }
 
   .filter-button {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     padding: 0.4rem 0.7rem;
   }
 }
