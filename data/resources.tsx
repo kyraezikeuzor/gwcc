@@ -12,7 +12,7 @@ export const resources: Resource[] = [
   {
     name: "Hackathons",
     description:
-      "Participate in coding competitions and build amazing projects",
+      "Participate in coding competitions and build amazing projects.",
     type: "event",
     link: "https://hackathons.hackclub.com/",
     icon: (
@@ -25,7 +25,7 @@ export const resources: Resource[] = [
   },
   {
     name: "Hack Club Bank",
-    description: "Get funding to support your club activities",
+    description: "Get funding to support your club activities.",
     type: "tool",
     link: "https://hackclub.com/fiscal-sponsorship",
     icon: (
@@ -38,7 +38,7 @@ export const resources: Resource[] = [
   },
   {
     name: "Code.org",
-    description: "Perfect for new members learning the basics of programming",
+    description: "Perfect for new members learning the basics of programming.",
     type: "program",
     link: "https://code.org/",
     icon: (
@@ -51,7 +51,7 @@ export const resources: Resource[] = [
   },
   {
     name: "Pizza Grants",
-    description: "Get free pizza for your club activities",
+    description: "Get free pizza for your club activities.",
     type: "program",
     link: "https://hackclub.com/pizza",
     icon: (
@@ -65,7 +65,7 @@ export const resources: Resource[] = [
   {
     name: "Jams",
     description:
-      "Take your coding skills to the next level with advanced topics",
+      "Take your coding skills to the next level with advanced topics.",
     type: "program",
     link: "https://jams.hackclub.com",
     icon: (
@@ -115,7 +115,7 @@ export const resources: Resource[] = [
   },
   {
     name: "Sprig",
-    description: "Code easy online games with JavaScript",
+    description: "Code easy online games with JavaScript.",
     type: "program",
     link: "https://sprig.hackclub.com/",
     icon: (
