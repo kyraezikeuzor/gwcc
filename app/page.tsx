@@ -9,9 +9,9 @@ export default function Home() {
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Girls_Who_Code_Logo.svg/1200px-Girls_Who_Code_Logo.svg.png"
             alt="GWC Logo"
-            className="w-auto h-20 object-cover mb-2"
+            className="w-auto h-14 lg:h-20 object-cover mb-2"
           />{" "}
-          Club Resources 🧩
+          Resources for Clubs
         </h1>
         <p className="text-left">
           Explore this collection of resources for{" "}
